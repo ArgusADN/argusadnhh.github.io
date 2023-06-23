@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black !important;
+  font-family: 'Salsa'
+}
+nav {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #191919;
+    padding: 0px;
+  }
+  .todo_menu{
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-izqui{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu-izqui a{
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu_dere {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu_dere a {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .biografia {
+    padding-right: 70px;
+    padding-left: 110px;
+  }
+  
+  .logo img {
+    width: 262px;
+    height: 103px;
+  }
+  .biografia {
+    padding-right: 70px;
+    padding-left: 110px;
+  }
+  .spotify img:hover, .deezer img:hover, .tidal img:hover, .apple img:hover {
+    transition: transform 0.3s ease-out;
+    transform: scale(1.1);
+  }
+  
+  .videos {
+    padding-right: 32px;
+    padding-left: 0;
+  }
+  .videos2 {
+    width: 412px;
+    height: 224px;
+  }
+  .eventos {
+    padding-right: 61px;;
+  }
+  .contacto {
+    padding-right: 158px
+  }
+  
+  #carrusel {
+    margin-top: 62px;;
+  }
+  
+  #biografia {
+    margin-top: 32px;
+  }
+  
+  #biografia,#musica,#videos,#eventos,#contacto {
+    color: white;
+    text-align: center;
+  }
+  .modal-body {
+    background-color: black;
+    text-align: center;
+    color: #ffff;
+  }
+  
+  #name h1 {
+    color: #0075FF;
+  }
+#redes {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#redes i {
+  color: #ffff;
+  font-size: 25px;
+    margin-left:5px;
+    margin-right: 5px;
+}
+
+#redes a {
+  margin: 0 10px;;
+}
+#unoydos {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 62px;
+  margin-bottom: 63px;
+}
+#uno img, #tres img {
+    margin-right: 260px;
+}
+#uno #perfil img, #tres #perfil img  {
+  margin-right: 0;
+} 
+#tres #iconos img {
+ margin-right: 0;
+}
+#tresycuatro {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+#spot {
+  padding-top: 80px;
+}
+.spot {
+  width: 832px;
+  height: 424px;
+}
+
+#musica {
+  background-image: url(../img/bg-musica.png);
+  margin-top: 124px;
+  background-size: contain;  
+}
+
+#musica h1 {
+  font-size:  40px;
+}
+
+#textos {
+  font-size: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 51px;
+}
+
+#contmusica {
+  padding-top: 120px;
+}
+
+#contmusica h2 {
+  font-size: 40px;
+   text-align: justify;
+   padding-left: 210px;
+   padding-bottom: 45px;
+}
+
+.spotify,
+.tidal {
+  padding-right: 92px;
+}
+
+.SD,.TyA {
+  display: flex;
+  padding-bottom: 47px;
+  align-items: center;
+  justify-content: center;
+}
+
+#reproductor {
+  padding-bottom:  54px;
+}
+ .playspotify {
+  width: 800px;
+  height: 370px;
+}
+#videos {
+  padding-top: 65px;
+}
+
+#videos h2 {
+  font-size: 20px;
+  color: #FFC700;
+}
+
+#arriba {
+  margin-bottom: 68px;
+}
+#new {
+  margin-bottom: 75px;
+}
+#eventos {
+  padding-top: 78px;
+}
+.info {
+  padding-top: 35px;
+}
+.OM1 {
+  margin-right: 15px;
+}
+#contacto {
+  margin-top: 177px;
+  margin-bottom: 48px;
+}
+#contacto img {
+width: 200px;
+}
+#textosC {
+  font-size: 20px;
+}
+footer {
+  height: 106px;
+  color: #fff;
+  background-color:#232121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .logfooter {
+  padding-right: 22px;
+}
+/* BOTON VOLVER ARRIBA */
+.backToTopBtn {
+  width: 100px;
+  height: 100px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.backToTopBtn img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.backToTopBtn:hover {
+  opacity: 1;
+}
+
+/* Agrega una animación de desvanecimiento */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Muestra el botón al hacer scroll */
+body.show-backToTopBtn .backToTopBtn {
+  display: block;
+  animation: fade-in 0.3s forwards;
+}
+
+/* Oculta el botón al volver al principio */
+body.hide-backToTopBtn .backToTopBtn {
+  animation: fade-out 0.3s forwards;
+  pointer-events: none;
+}
+/* FIN */
+/* ADN CLOTHES BOTON */
+.externalLinkBtn {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  text-decoration: none;
+}
+
+.externalLinkBtn:hover {
+  opacity: 1;
+}
+
+.externalLinkBtn:focus {
+  outline: none;
+}
+
+.externalLinkBtn:active {
+  transform: translateY(1px);
+}
+
+.externalLinkBtn {
+  display: flex;
+  align-items: center;
+}
+
+.externalLinkBtn img {
+  margin-right: 5px;
+}
+/* FIN  */
+
+
+/* Responsive */
+/* 576px */
+@media (min-width: 576px)
+{
+ /* Barra de navegacion */
+ nav {
+    width: 576px;
+    background-color: #191919;
+  }
+  .todo_menu {
+
+    width:576px;
+  }
+  .menu-izqui a {
+    display: none;
+  }
+  .menu_dere a {
+    display: none;
+  }
+  /* Fin barra de navegacion */   
+  /* Biografia */
+    #unoydos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+       }
+      #uno img, #dos img, #tres img {
+        margin-bottom: 1.5rem;
+      }
+      #uno img, #tres img {
+        margin-right: 0;
+      }
+    #tresycuatro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .spot {
+      width: 450px;
+      height: 200px;
+    }
+    /* fin biografia */
+    /* Musica */
+    #contmusica {
+      padding-top: 60px;
+    }
+    #contmusica h2 {
+      padding-left: 20px;
+      padding-bottom: 30px;
+    }
+    #plataformas img {
+      width: 80%;
+    }
+    .playspotify {
+      width: 90%;
+
+    }
+    #textos {
+      padding: 30px 30px 0px;
+    }
+    /* fin musica */
+    /* videos */
+    #new {
+      margin-bottom: 40px;
+    }
+    #arriba {
+      margin: auto;
+    }
+    /* videos fin */
+    /* Eventos */
+    #eventos {
+      padding-top: 40px;
+    }
+    #eventos img {
+      width: 90%;
+    }
+    /* fin eventos */
+    /* Contacto */
+    #contacto {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    #contacto img {
+      width: 20%;
+    }
+    /* Fin contacto */
+    /* Footer */
+    footer p {
+      margin-bottom: 0;
+    }
+    .logfooter {
+      width: 90%;
+      padding-left: 22px;
+    }
+    /* fin */
+    /* Volver arriba */
+    .backToTopBtn {
+      width: 60px;
+      height: auto;
+    }
+    .backToTopBtn img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    /* fin */
+}
+
+/* 768px */
+@media (min-width: 768px)
+{ 
+  /* Barra de navegacion */
+    nav {
+        width: 768px;
+        background-color: #191919;
+      }
+      .todo_menu {
+    
+        width: 768px;
+        margin: 0 0;
+      }
+    .col-logo {
+      width: 220px;
+      height: auto;
+    }
+    .menu-izqui{
+      width: 150px;
+    }
+    .menu_dere {
+      width: 200px;
+    }
+.menu-izqui a {
+  display: block;
+}
+.menu_dere a {
+  display: block;
+}
+    #unoydos {
+        flex-direction: row;
+    }
+    #tresycuatro {
+        flex-direction: row;
+    }
+    #uno img, #tres img {
+      margin-right: 150px;
+  }
+}
+/* fin barra */
+/* Biografia */
+
+/* fin biografia */
+
+/* fin */
+/* 1200px */
+@media (min-width: 1200px) {
+  nav {
+    width: 1200px;
+  }
+  .col-logo {
+    width: 262px;
+  }
+  .todo_menu {
+    width: 1200px;
+    margin: 0;
+  }
+  .menu-izqui {
+    width: 600px;
+  }
+  .menu_dere {
+    width: 600px;
+  }
+  /* Biografia */
+  #uno img, #tres img {
+    margin-right: 260px;
+}
+  /*  */
+  /* Eventos */
+#eventos img {
+  width: 70%;
+}
+  /* fin eventos */
+#contacto img {
+  width: 200px;
+}
+}
+/* fin 1200px */
